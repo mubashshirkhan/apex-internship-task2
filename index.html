@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mubashshir Khan | Portfolio</title>
+    <title>NovaFlow | Task 3</title>
     <meta
       name="description"
-      content="Portfolio website for Mubashshir Khan, a web developer intern and MSc Computer Science graduate."
+      content="NovaFlow product landing page built for Task 3 in the Apex internship project."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,18 +19,30 @@
   <body>
     <header class="site-header">
       <nav class="container nav">
-        <div class="brand">Mubashshir<span>Khan</span></div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
+        <a href="#top" class="brand" aria-label="NovaFlow home">
+          <span class="brand-mark">N</span>NovaFlow
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navMenu">
+          <a href="#features">Features</a>
+          <a href="#stats">Stats</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#testimonials">Reviews</a>
           <a href="#contact">Contact</a>
           <button
             class="theme-toggle"
             id="themeToggle"
             type="button"
-            aria-label="Toggle color theme"
+            aria-label="Toggle theme"
           >
             <span class="theme-icon">☀️</span>
             <span class="theme-text">Light</span>
@@ -39,198 +51,256 @@
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-content">
-          <div class="hero-text">
-            <p class="eyebrow">Web Developer Intern</p>
-            <h1>Hi, I’m Mubashshir Khan</h1>
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Built for teams that move fast</p>
+            <h1>Turn ideas into momentum.</h1>
             <p class="subtitle">
-              MSc Computer Science graduate with hands-on experience in Java,
-              Spring Boot, SQL, React, HTML, CSS, JavaScript, and modern web
-              technologies.
+              NovaFlow helps startups and growing teams organize work, automate
+              busywork, and ship faster with calm, visible workflows.
             </p>
             <div class="cta-group">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <button class="btn btn-secondary" id="helloButton" type="button">
-                Say Hello
-              </button>
+              <a class="btn btn-primary" href="#pricing">Start free trial</a>
+              <a class="btn btn-secondary" href="#features">See platform</a>
             </div>
-            <ul class="quick-facts">
-              <li>Java & Spring Boot</li>
-              <li>React & JavaScript</li>
-              <li>GitHub & Deployment</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">About Me</p>
-            <h2>Building responsive, user-focused web experiences.</h2>
-          </div>
-          <div class="about-grid">
-            <div class="about-card">
-              <p>
-                I am a motivated and quick-learning software developer with a
-                strong foundation in full-stack web development, problem
-                solving, and modern development workflows. My experience
-                includes building responsive web interfaces, implementing
-                JavaScript logic, and using version control and deployment
-                practices effectively.
-              </p>
-            </div>
-            <div class="about-card highlight">
-              <h3>Career Focus</h3>
-              <ul>
-                <li>Responsive frontend development</li>
-                <li>Java and Spring Boot backend work</li>
-                <li>REST APIs and database integration</li>
-                <li>Clean code and teamwork</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section alt">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Skills</p>
-            <h2>Technologies I work with</h2>
-          </div>
-
-          <div class="skills-grid">
-            <div class="skill-card">
-              <h3>Languages</h3>
-              <p>Core Java, Advanced Java, JavaScript, HTML, CSS, SQL</p>
-            </div>
-            <div class="skill-card">
-              <h3>Frontend</h3>
-              <p>React, Bootstrap, Responsive design, DOM manipulation</p>
-            </div>
-            <div class="skill-card">
-              <h3>Backend</h3>
-              <p>Spring, Spring Boot, Microservices, JDBC, REST APIs</p>
-            </div>
-            <div class="skill-card">
-              <h3>Database & DevOps</h3>
-              <p>MySQL, Git, GitHub, Docker, Kubernetes, Jenkins, AWS Basics</p>
-            </div>
-            <div class="skill-card">
-              <h3>Testing</h3>
-              <p>JUnit, Mockito</p>
-            </div>
-            <div class="skill-card">
-              <h3>Deployment</h3>
-              <p>Vercel, Netlify</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Recent work and practical experience</h2>
-          </div>
-
-          <div class="project-card feature-project">
-            <div class="project-image-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
-                alt="ResQNet dashboard overview"
-                class="project-image"
-              />
-            </div>
-            <div class="project-info">
-              <span class="project-tag">Featured Project</span>
-              <h3>ResQNet – AI Disaster Response System</h3>
-              <p>
-                Built a Progressive Web App (PWA) focused on disaster response
-                and emergency information access. It combines a mobile-first
-                interface, AI-powered assistance, and responsive deployment
-                architecture to provide users with practical support during
-                critical situations.
-              </p>
-              <div class="tech-stack">
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
-                <span>PWA</span>
-                <span>Gemini AI</span>
-                <span>REST API</span>
+            <div class="mini-proof">
+              <div>
+                <strong>12k+</strong>
+                <span>teams onboarded</span>
               </div>
-              <a
-                class="project-link"
-                href="https://resqnet-steel.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Live Project
-              </a>
+              <div>
+                <strong>4.9/5</strong>
+                <span>average rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Dashboard preview">
+            <div class="dashboard-card main-card">
+              <div class="dashboard-header">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+
+              <div class="dashboard-body">
+                <div class="panel-block overview">
+                  <p>Revenue pipeline</p>
+                  <h3>$184.2K</h3>
+                  <span class="up">+24.8% this month</span>
+                </div>
+
+                <div class="chart-bars" aria-hidden="true">
+                  <span style="height: 35%"></span>
+                  <span style="height: 50%"></span>
+                  <span style="height: 42%"></span>
+                  <span style="height: 72%"></span>
+                  <span style="height: 68%"></span>
+                  <span style="height: 88%"></span>
+                  <span style="height: 100%"></span>
+                </div>
+
+                <div class="panel-row">
+                  <div class="mini-card">
+                    <span>Tasks done</span>
+                    <strong>1,428</strong>
+                  </div>
+                  <div class="mini-card accent-card">
+                    <span>Automation</span>
+                    <strong>86%</strong>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="education" class="section alt">
-        <div class="container education-grid">
-          <div>
-            <div class="section-heading left-align">
-              <p class="eyebrow">Education</p>
-              <h2>Academic background</h2>
-            </div>
-            <div class="edu-card">
-              <h3>Rashtrasant Tukadoji Mahraj Nagpur University</h3>
-              <p><strong>MSc in Computer Science</strong></p>
-              <p>Graduated in 2024</p>
-            </div>
+      <section id="features" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why teams choose NovaFlow</p>
+            <h2>Everything your workflow needs in one place.</h2>
           </div>
 
-          <div>
-            <div class="section-heading left-align">
-              <p class="eyebrow">Certifications</p>
-              <h2>Learning milestones</h2>
+          <div class="features-grid">
+            <article class="feature-card">
+              <div class="icon-box">⚡</div>
+              <h3>Smart automation</h3>
+              <p>
+                Automate recurring tasks, alerts, and approvals so your team can
+                focus on decisions instead of busywork.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-box">📊</div>
+              <h3>Real-time insights</h3>
+              <p>
+                Track progress, conversion, and performance with live dashboards
+                that surface the signals that matter most.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-box">🤝</div>
+              <h3>Team alignment</h3>
+              <p>
+                Keep marketing, sales, and operations moving together with
+                shared updates, ownership, and timelines.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="icon-box">🔒</div>
+              <h3>Secure by default</h3>
+              <p>
+                Protect data with enterprise-grade permissions, audit trails,
+                and reliable infrastructure across every workflow.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats" class="section">
+        <div class="container stats-wrap">
+          <div class="stats-copy">
+            <p class="eyebrow">Performance that scales</p>
+            <h2>Built for clarity, momentum, and measurable growth.</h2>
+            <p>
+              From project planning to campaign tracking, NovaFlow brings every
+              moving piece into one streamlined operating system.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <strong>3x</strong>
+              <span>Faster project delivery</span>
             </div>
-            <ul class="cert-list">
-              <li>GitHub Foundations — DataCamp</li>
-              <li>Java Masterclass for Software Developers — Educative</li>
-              <li>Java Full Stack Training — Naresh i Technologies</li>
-            </ul>
+            <div class="stat-box">
+              <strong>41%</strong>
+              <span>Higher team productivity</span>
+            </div>
+            <div class="stat-box">
+              <strong>99.9%</strong>
+              <span>Platform uptime</span>
+            </div>
+            <div class="stat-box">
+              <strong>8 hrs</strong>
+              <span>Saved per team each week</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Simple pricing</p>
+            <h2>Choose the plan that matches your growth stage.</h2>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="pricing-card">
+              <span class="plan-name">Starter</span>
+              <h3>$19<span>/mo</span></h3>
+              <ul>
+                <li>Up to 3 team spaces</li>
+                <li>Basic analytics</li>
+                <li>Unlimited tasks</li>
+                <li>Email support</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Get started</a>
+            </article>
+
+            <article class="pricing-card featured-plan">
+              <span class="plan-badge">Most popular</span>
+              <span class="plan-name">Growth</span>
+              <h3>$49<span>/mo</span></h3>
+              <ul>
+                <li>Everything in Starter</li>
+                <li>Advanced automations</li>
+                <li>Custom dashboards</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Start free</a>
+            </article>
+
+            <article class="pricing-card">
+              <span class="plan-name">Scale</span>
+              <h3>$99<span>/mo</span></h3>
+              <ul>
+                <li>Multi-team workspaces</li>
+                <li>SSO and permissions</li>
+                <li>Forecasting tools</li>
+                <li>Dedicated onboarding</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Talk to sales</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Customer stories</p>
+            <h2>Teams trust NovaFlow to move faster together.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote class="quote-card">
+              “We replaced scattered tools with one workflow and saw a 38%
+              increase in execution speed in the first month.”
+              <footer>
+                <strong>Amelia Lee</strong>
+                <span>COO, Northstar Labs</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="quote-card">
+              “NovaFlow gave our marketing and product teams a single source of
+              truth without slowing anyone down.”
+              <footer>
+                <strong>Daniel Brooks</strong>
+                <span>VP Marketing, Brightlane</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="quote-card">
+              “The onboarding was smooth, the automation setup was fast, and the
+              reporting is now much easier to trust.”
+              <footer>
+                <strong>Sophia Chen</strong>
+                <span>Operations Lead, Synthex</span>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </section>
     </main>
 
     <footer id="contact" class="site-footer">
-      <div class="container footer-content">
+      <div class="container footer-cta">
         <div>
-          <h3>Let’s connect</h3>
-          <p>
-            Open to web development opportunities and collaborative projects.
-          </p>
+          <p class="eyebrow">Ready to move faster?</p>
+          <h2>Start your next big win with NovaFlow.</h2>
         </div>
-        <div class="footer-links">
-          <a href="mailto:mubashshirk7666@gmail.com">Email</a>
-          <a
-            href="https://github.com/mubashshirkhan"
-            target="_blank"
-            rel="noreferrer"
-            >GitHub</a
-          >
-          <a
-            href="https://linkedin.com/in/mubashshirkhan--"
-            target="_blank"
-            rel="noreferrer"
-            >LinkedIn</a
-          >
-        </div>
+        <a href="mailto:hello@novaflow.io" class="btn btn-primary"
+          >Book a demo</a
+        >
       </div>
-      <p class="copyright">© <span id="year"></span> Mubashshir Khan</p>
+
+      <div class="container footer-bottom">
+        <div class="brand-footer">NovaFlow</div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#testimonials">Reviews</a>
+        </div>
+        <p class="copyright">© <span id="year"></span> NovaFlow</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
